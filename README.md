@@ -1,2 +1,0 @@
-# js-assignment
-test
