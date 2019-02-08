@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<!-- js100.html -->
+<head>
+    <meta charset="utf-8"/>
+    <title>Audio, Video Example</title>
+    <link rel='stylesheet' href='player.css'/>
+</head>
+<body>
+    <header>
+    <h1>Audio and Video</h1>
+    </header>
+<main>
+    <section>
+    <h2>Audio</h2>
+    <audio id='audio' preload controls>
+        <source src='audio.wav' type='audio/wav'/>
+        <source src='audio.ogg' type='audio/ogg'/>
+        <source src='audio.mp3' type='audio/mpeg'/>
+        <p> <!-- paragraph displays if audio element not supported -->
+            <a href='audio.wav'>Download <i>wav</i> File</a>,
+            <a href='audio.ogg'>Download <i>ogg</i> File</a>, or
+            <a href='audio.mp3'>Download <i>mp3</i> File</a>
+        </p>
+    </audio>
+    <p>
+        Audio files from
+        <a href='http://www.bigsoundbank.com/'>
+        http://www.bigsoundbank.com/
+        </a>
+    </p>
+    </section>
+
+    <section>
+    <h2>Video</h2>
+    <video id='movie' preload controls>
+        <source src='video.mp4'/> <!-- mp4 first -->
+        <source src='video.ogv'
+                type='video/ogg; codecs="theora, vorbis"'/>
+        <source src='video.webm'
+                type='video/webm; codecs="vp8, vorbis"'/>
+        <p>   <!-- paragraph displays if video element not supported -->
+            <a href='video.ogv'>Download <i>Ogg</i> File</a>,
+            <a href='video.mp4'>Download <i>MP4</i> File</a>, or
+            <a href='video.webm'>Download <i>WebM</i> File</a>
+        </p>
+    </video>
+    <p>
+      Video files from
+<a href='http://techslides.com/sample-webm-ogg-and-mp4-video-files-for-html5'>
+http://techslides.com/sample-webm-ogg-and-mp4-video-files-for-html5
+</a>
+    </p>
+    </section>
+</main>
+<footer>
+<address>&copy; nml, 2015-09-30</address>
+</footer>
+</body>
+</html>

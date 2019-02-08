@@ -1,0 +1,186 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <script src="tunes.js" charset="utf-8"></script>
+  <title>tunes.js</title>
+  <style>
+
+    ul {
+      list-style: none;
+    }
+    .wrapper {
+      display: grid;
+      grid-template-columns: 25% 25% 25% 25%;
+    }
+    .wrapper > div {
+      background-color: rgb(35,35,35);
+      color: #f1f1f1;
+      padding:.5em;
+      border-bottom: solid grey .5px;
+    }
+    .content {
+      display: grid;
+      grid-template-columns: 25% 25% 25% 25%;
+    }
+    .content >div {
+      background-color: #eee;
+      padding: .5em;
+      border-bottom: solid grey .5px;
+    }
+    .content >div:nth-child(odd) {
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <h3>Tunes.js</h3>
+  <div class="wrapper">
+    <div class="artist">Artist</div>
+    <div class="title">Title</div>
+    <div class="composer">Composer</div>
+    <div class="year">Year Created</div>
+  </div>
+<div class="content">
+    <div id="artist"></div>
+    <div id="title"></div>
+    <div id="composer"></div>
+    <div id="year"></div>
+    <div id="1"></div>
+    <div id="2"></div>
+    <div id="3"></div>
+    <div id="4"></div>
+    <div id="5"></div>
+    <div id="6"></div>
+    <div id="7"></div>
+    <div id="8"></div>
+    <div id="9"></div>
+    <div id="10"></div>
+    <div id="11"></div>
+    <div id="12"></div>
+
+
+</div>
+<br>
+<h3>Insert a new song</h3>
+<form action="">
+  <input type="text" placeholder="Artist..." required>
+  <input type="text" placeholder="Title...." required>
+  <input type="text" placeholder="Composer..." required>
+  <input type="text" placeholder="Year Created" required>
+  <button class="btn btn-warning" type="submit">Submit</button>
+</form>
+
+<br>
+<script type="text/javascript">
+
+// var tune = {
+//   artist: 'Artist: Red hot Chili Peppers',
+//   title: 'Song title: Californication',
+//   composer: 'Composer: Anthony Kiedis',
+//   year: 'Year Created: 1999',
+//   performers: ['Performers: ', 'Flea', ' Anthony Kiedis', ' Chad Smith', ' Josh Klinghoffer']
+// };
+// document.write(tune.title + '<br/>' + tune.artist+ " <br/>" + tune.composer+ "<br/>" + tune.year + " <br/>" + tune.performers);
+// console.log(tune);
+
+function tune(name, title, composer, year, performers) {
+  this.name = name;
+  this.title = title;
+  this.composer = composer;
+  this.year = year;
+  this.performers = performers;
+  this.newArtist = function() {
+    return this.artist;
+  };
+}
+
+var tune = new Object();
+
+tune.artist = 'Philanthrope';
+tune.title = 'Halftime';
+tune.composer = 'Philanthrope';
+tune.year = 1993;
+delete tune.performers;
+
+var artist = document.getElementById('1');
+artist.textContent = tune.artist;
+
+var title = document.getElementById('2');
+title.textContent = tune.title;
+
+var composer = document.getElementById('3');
+composer.textContent = tune.composer;
+
+var year = document.getElementById('4');
+year.textContent = tune.year;
+
+var tune = new Object();
+
+tune.artist = 'Red Hot Chili Peppers';
+tune.title = 'Californication';
+tune.composer = 'Anthony Kiedis';
+tune.year = 1999;
+delete tune.performers;
+
+var artist = document.getElementById('artist');
+artist.textContent = tune.artist;
+
+var title = document.getElementById('title');
+title.textContent = tune.title;
+
+var composer = document.getElementById('composer');
+composer.textContent = tune.composer;
+
+var year = document.getElementById('year');
+year.textContent = tune.year;
+
+var tune = new Object();
+
+tune.artist = 'The XX';
+tune.title = 'Intro';
+tune.composer = 'Oliver Sim';
+tune.year = 2009;
+delete tune.performers;
+
+var artist = document.getElementById('5');
+artist.textContent = tune.artist;
+
+var title = document.getElementById('6');
+title.textContent = tune.title;
+
+var composer = document.getElementById('7');
+composer.textContent = tune.composer;
+
+var year = document.getElementById('8');
+year.textContent = tune.year;
+
+var tune = new Object();
+
+tune.artist = 'Arctic Monkeys';
+tune.title = 'Arabella';
+tune.composer = 'Alex Turner';
+tune.year = 2013;
+delete tune.performers;
+
+var artist = document.getElementById('9');
+artist.textContent = tune.artist;
+
+var title = document.getElementById('10');
+title.textContent = tune.title;
+
+var composer = document.getElementById('11');
+composer.textContent = tune.composer;
+
+var year = document.getElementById('12');
+year.textContent = tune.year;
+
+
+
+
+
+</script>
+</body>
+</html>

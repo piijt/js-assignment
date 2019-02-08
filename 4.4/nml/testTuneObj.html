@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+      <meta charset="utf-8"/>
+      <title>Object-oriented JavaScript example</title>
+      <script src='../nQuery.js'></script>
+      <script src='Tune.js'></script>
+      <script src='testTuneObj.js'></script>
+      <style>
+          div {
+              float: left;
+              height: 500px;
+              margin: 1em;
+              outline: 1px solid blue;
+              padding: 1em;
+              width: 40%;
+          }
+      </style>
+  </head>
+
+  <body>
+      <h1>Tunes</h1>
+      <div id='left'>
+          <h2>Entry form</h2>
+          <p>
+              <label for='title'>Title:</label><br/>
+              <input type='text' id='title' required/>
+          </p>
+          <p>
+              <label for='cmp'>Composer:</label><br/>
+              <input type='text' id='cmp' required/>
+          </p>
+          <p>
+              <label for='year'>Year:</label><br/>
+              <input type='number' id='year' min='1970' max='2018' value='1999' required/>
+          </p>
+          <p>
+              <label for='perf'>Singer:</label><br/>
+              <input type='text' id='perf' required/>
+          </p>
+          <p>
+          </p>
+          <p>
+              <button id='butt'>Enter</button>
+          </p>
+      </div>
+      <div id='right'>
+          <h2>List of Tunes</h2>
+          <div id='tunearea'></div>
+      </div>
+  </body>
+</html>
